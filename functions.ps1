@@ -101,7 +101,7 @@ function Uninstall-OneDrive() {
 # ----------------------------------
 
 Function Get-PackagesList() {
-    return (((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/fvarrui/ConfigMyWin10/master/packages.txt"))).Split("`n")
+    return (((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/RicardoVargasLeslie/ConfigMyWin10/master/packages.txt"))).Split("`n")
 }
 
 Function Install-Packages() {
