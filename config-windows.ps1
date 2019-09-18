@@ -21,9 +21,9 @@ If (Test-RunningAsAdministrator) {
     Uninstall-OneDrive
 
     # Change computer name and workgroup
-    Write-Output "Changing computer name to CENTOLLO and workgroup to MINIK..."
-    Rename-Computer -NewName "CENTOLLO" -ErrorAction SilentlyContinue
-    Add-Computer -WorkgroupName "MINIK" -ErrorAction SilentlyContinue
+    Write-Output "Changing computer name to SneakyRicki"
+    Rename-Computer -NewName "SneakyRicki" -ErrorAction SilentlyContinue
+   
 
     # Set timezone
     Write-Output "Setting timezone to GMT Standard Time"
