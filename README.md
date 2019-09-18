@@ -10,7 +10,7 @@ Para configurar mi equipo con Windows 10 recién instalado ejecuto el siguiente 
 
 3. Desinstala OneDrive.
 
-4. Cambia el nombre del equipo a `CENTOLLO` (el nombre de mi portátil) y mete el equipo en el grupo de trabajo `MINIK`.
+4. Cambia el nombre del equipo a `SneakyRicki` (el nombre de mi portátil)
 
 5. Reinicia el equipo para establecer algunos cambios realizados.
 
@@ -26,12 +26,12 @@ Ejecutar el siguiente comando como `Administrador` desde:
 ### Símbolo del sistema (CMD)
 
 ```
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/fvarrui/ConfigMyWin10/master/config-windows.ps1'))"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RicardoVargasLeslie/ConfigMyWin10/master/config-windows.ps1'))"
 ```
 
 ### PowerShell (PS)
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/fvarrui/ConfigMyWin10/master/config-windows.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RicardoVargasLeslie/ConfigMyWin10/master/config-windows.ps1'))
 ```
 
