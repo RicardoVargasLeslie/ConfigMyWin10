@@ -1,6 +1,6 @@
 ﻿Write-Host @"
 
-Script de configuración automática de Windows 10 (Personalizado para mi portátil)
+Script de configuración automática de Windows 10
 
 "@
 
@@ -21,8 +21,8 @@ If (Test-RunningAsAdministrator) {
     Uninstall-OneDrive
 
     # Change computer name and workgroup
-    Write-Output "Changing computer name to SneakyRicki"
-    Rename-Computer -NewName "SneakyRicki" -ErrorAction SilentlyContinue
+    Write-Output "Changing computer name to RIC"
+    Rename-Computer -NewName "RIC" -ErrorAction SilentlyContinue
    
 
     # Set timezone
