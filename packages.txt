@@ -9,7 +9,6 @@ vlc
 nodejs.install
 postman
 dotnetfx
-intellijidea-ultimate
 steam
 discord
 geforce-experience
@@ -19,3 +18,6 @@ epicgameslauncher
 icue
 origin
 ubisoft-connect
+jetbrainstoolbox
+awscli
+intel-dsa
