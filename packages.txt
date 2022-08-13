@@ -19,4 +19,3 @@ epicgameslauncher
 icue
 origin
 ubisoft-connect
-qbittorrent
