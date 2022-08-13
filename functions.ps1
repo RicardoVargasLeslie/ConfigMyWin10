@@ -116,22 +116,6 @@ function Uninstall-OneDrive() {
 # Registry related functions
 # ----------------------------------
 
-Function Find-SecondaryDrive() {
-    
-    # get removible drives excluding system volume
-    $drives = Get-WmiObject Win32_Volume -Filter ("DriveType={0}" -f [int][System.io.Drivetype]::Fixed)
-                | Where-Object { $_.DriveLetter -ne $env:SystemDrive -and $_.SystemVolume -eq $false }
-
-    foreach ($drive in $drives) {
-        If ($drive.DriveLetter -ne $null) {
-            return $drive.DriveLetter.Trim()
-        }
-    }
-
-    return $null
-
-}
-
 Function Change-ProfilesLocation([string]$location = (Find-SecondaryDrive)) {
 
     Write-Host "Changing profiles location to $location in Windows Registry..."
@@ -187,4 +171,3 @@ Function Create-User($username, $password, $group) {
 Function Get-PackagesList() {
     return (((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/RicardoVargasLeslie/ConfigMyWin10/master/packages.txt"))).Split("`n")
 }
-
