@@ -20,3 +20,4 @@ ubisoft-connect
 jetbrainstoolbox
 awscli
 intel-dsa
+drivereasyfree
