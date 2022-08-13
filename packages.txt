@@ -1,17 +1,12 @@
 7zip
 adobereader
-adoptopenjdk11
 firefox
 git
 googlechrome
 notepadplusplus
-spotify
-teamviewer
-typora
 vscode
 vlc
 nodejs.install
-ublockorigin-chrome
 postman
 dotnetfx
 intellijidea-ultimate
