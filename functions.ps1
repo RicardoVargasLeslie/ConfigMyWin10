@@ -175,7 +175,12 @@ Function Create-User($username, $password, $group) {
 
     } else {
 
-        New-LocalUser `            -Name $username `            -Password (ConvertTo-SecureString -Force -AsPlainText $password) `            -AccountNeverExpires `            -PasswordNeverExpires `            -UserMayNotChangePassword | Out-Null
+        New-LocalUser `
+            -Name $username `
+            -Password (ConvertTo-SecureString -Force -AsPlainText $password) `
+            -AccountNeverExpires `
+            -PasswordNeverExpires `
+            -UserMayNotChangePassword | Out-Null
 
         Add-LocalGroupMember -Group $group -Member $username
 
@@ -186,23 +191,4 @@ Function Create-User($username, $password, $group) {
 
 # ----------------------------------
 # Task scheduling related functions
-# ----------------------------------
-
-# ----------------------------------
-#Function Schedule-Shutdown() {
-#    Write-Output "Scheduling system shutdown everyday at 3pm..."
-#
-#   $taskName = "Shutdown computer"
-#
-#   if (Get-ScheduledTask -TaskName $taskName -ErrorAction SilentlyContinue) {
-#      
-#      Write-Host -ForegroundColor Yellow "Scheduled task $taskName already exists"
-#
-#   } else { 
-#
-#       $action = New-ScheduledTaskAction -Execute "shutdown" -Argument "/s /f /t 0"
-#      $trigger = New-ScheduledTaskTrigger -Daily -At "15:00:00"
-#     Register-ScheduledTask -Description "Power off computer everyday at 3pm" -TaskName $taskName -Action $action -Trigger $trigger
-#}
-#}
 # ----------------------------------
