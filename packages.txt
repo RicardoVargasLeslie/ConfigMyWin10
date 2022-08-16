@@ -21,3 +21,4 @@ jetbrainstoolbox
 awscli
 intel-dsa
 drivereasyfree
+amazon-photos
