@@ -13,12 +13,8 @@ steam
 discord
 geforce-experience
 dbeaver
-epicgameslauncher
 icue
-origin
 ubisoft-connect
 jetbrainstoolbox
-awscli
 intel-dsa
-drivereasyfree
-amazon-photos
+logitech-options
